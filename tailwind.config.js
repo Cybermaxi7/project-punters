@@ -9,6 +9,9 @@ export default {
         gilroy: ["Gilroy", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      colors:{
+        customGreen: '#1D994A'
+      },
     },
   },
   plugins: [daisyui],
