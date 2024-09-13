@@ -22,8 +22,7 @@ const MatchOutcome = () => {
     results: ["L", "L", "L", "D"], 
   };
 
-  const score = "2 - 0"; 
-  const date = "Thu 4th Jul, 2024 - 20:00 PM"; 
+
   
   const hightlight1 = preview1;
   const hightlight2 = preview2;
@@ -33,24 +32,24 @@ const MatchOutcome = () => {
       {/* Main container for the match outcome page */}
       <div className="min-h-screen bg-white p-4">
         {/* Navigation and title section */}
-        <div className="flex justify-between items-center mb-6 text-gray-600">
+        <div className="flex justify-around items-center mb-6 text-gray-600">
           {/* Link to go back to all predictions */}
-          <Link to="/all-predictions" className="text-sm">
+          <Link to="/all-predictions" className="font-gilroy flex-shrink-0">
             ← Back to all predictions
           </Link>
           {/* Title indicating the teams in the match */}
-          <p className="text-sm">All Predictions {">"} Germany v Scotland</p>
+          <p className="font-gilroy mx-auto ">
+            All Predictions {">"}{" "}
+            <span className="text-customGreen">Germany v Scotland</span>
+          </p>
         </div>
 
         {/* Card displaying the match details */}
-        <div className="bg-customGreen rounded-lg p-6 text-white">
+        {/* <div className="bg-customGreen rounded-lg p-6 text-white"> */}
           {/* Prediction card component displaying team information */}
           <PredictionCard team1={team1} team2={team2} />
-          {/* Score display section */}
-          <div className="flex justify-center my-6">
-            <Score score={score} date={date} /> {/* Score and date component */}
-          </div>
-        </div>
+
+        {/* </div> */}
 
         {/* Buttons for stats related to the match */}
         <StatsButtons />
