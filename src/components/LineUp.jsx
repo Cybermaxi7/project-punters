@@ -3,7 +3,7 @@ import React from "react";
 const LineUp = ({ margintop = "mt-10" }) => {
   return (
     <div
-      className={`w-96 h-[32rem] flex flex-col items-center card-stats-shadow ${margintop} rounded-[8px]`}
+      className={`w-full max-w-[24rem] h-[32rem] md:h-[28rem] flex flex-col items-center card-stats-shadow ${margintop} rounded-[8px]`}
     >
       {/* Lineup Header */}
       <div className="w-full pt-2 px-4">
