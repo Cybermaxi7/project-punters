@@ -30,7 +30,7 @@ const LineUp = ({ margintop = "mt-10" }) => {
         </div>
 
         {/* Field */}
-        <div className="relative bg-green-500 w-96 h-[32rem]">
+        <div className="relative bg-green-500  w-full max-w-96 mx-auto h-[32rem]">
           {/* Top Goal (with penalty and goal area) */}
           <div className="absolute border-t-2 border-white top-10 left-1/2 transform -translate-x-1/2 w-full">
             <div className="absolute top-[-32px] left-1/2 transform -translate-x-1/2 border-2 border-white w-16 h-8"></div>
