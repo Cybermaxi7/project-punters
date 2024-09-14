@@ -13,6 +13,9 @@ export default {
         "spin-slow": "spin 4s linear infinite", // Slow spinning animation
         "bounce-slow": "bounce 3s infinite", // Slow bouncing animation
       },
+      colors:{
+        customGreen: '#1D994A'
+      },
     },
   },
   plugins: [daisyui],

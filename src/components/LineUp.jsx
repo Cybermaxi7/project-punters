@@ -1,6 +1,10 @@
-const LineUp = () => {
+import React from "react";
+
+const LineUp = ({ margintop = "mt-10" }) => {
   return (
-    <div className="w-full h-[32rem] flex flex-col items-center card-stats-shadow mt-5 rounded-[8px]">
+    <div
+      className={`w-full max-w-[24rem] h-[32rem] md:h-[28rem] flex flex-col items-center card-stats-shadow ${margintop} rounded-[8px]`}
+    >
       {/* Lineup Header */}
       <div className="w-full pt-2 px-4">
         <h2 className="bg-white font-semibold text-[20px] leading-[30px]">
